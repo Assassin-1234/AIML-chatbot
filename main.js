@@ -9,6 +9,7 @@ const port = 3000;
 
 app.set('json spaces', 1);
 app.use('/public', express.static('public'));
+app.use(express.json())
 app.get('/chat', (req, res) => {
 	const message = req.query.message;
 
