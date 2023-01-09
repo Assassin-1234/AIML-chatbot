@@ -20,7 +20,7 @@ app.get('/chat', (req, res) => {
 
 	aimlInterpreter.findAnswerInLoadedAIMLFiles(message, async (answer, wildCardArray, input) => {
 
-		answer = answer != null ? answer : '';
+		answer = answer != null ? answer : 'can you please repeat?';
 		res.send({
 			reply: answer,
 			wildcard: wildCardArray,
