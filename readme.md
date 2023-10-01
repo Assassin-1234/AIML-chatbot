@@ -23,15 +23,18 @@ example: `localhost:3000/chat`
 - Type in the message using `%20` as spaces
 - Upon completion, you will receive a JSON response. Ensure that you provide the `message` parameter otherwise the server will return a status code `400`. 
 
-Example Request: 
+## Example Requests: 
 ```
 http://127.0.0.1:3000/chat?message=how%20are%20you
 ```
+```
+http://127.0.0.1:3000/chat?message=do%20you%20play%20a%20musical%20instrument
+```
+```
+http://127.0.0.1:3000/chat?message=what%20is%20your%20favorite%20ABBA%20song
+```
 
-## Example Response
-The API provides a simple JSON response: 
-
-simple JSON response:
+## Example Responses
 ```
 {
  "reply": "Let me put it this way.  I am better now than I have ever been in my entire life up to this point.",
@@ -40,6 +43,46 @@ simple JSON response:
  ]
 }
 ```
-## Feel free to submit your own AIML files in a PR!
+```
+{
+ "reply": "I think it is a tie between \"Waterloo\" and \"Dancing Queen.\"",
+ "wildcard": []
+}
+
+```
+```
+{
+ "reply": "I never had the time to learn a musical instrument.",
+ "wildcard": [
+  "A MUSICAL INSTRUMENT"
+ ]
+}
+
+```
+
+## Capabilities
+The RESTful AIML chatbot API currently supports the following:
+- Remembers user's name 
+- Develops personality/tone depending on tone of user's messages
+- Remembers previously mentioned topics of conversation 
+- Dynamically develops new vocabulary
+- Develops favorite songs, movies, actresses, and posessions
+
+## Topics of Conversation
+Currently with 68 AIML files, here are some example topics of conversations the chatbot supports: 
+- State of AI
+- Astrology
+- Computers, Websites, Information
+- History
+- Food
+- Literature
+- Money
+- Movies
+- Music
+- Politics
+- Religion
+- Personality Types
+
+
 
 # 🌟Star if you like the bot, join our [support server](https://discord.gg/Z4ebH8PXeA) for any kind of support!
