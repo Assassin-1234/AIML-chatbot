@@ -83,6 +83,7 @@ Currently with 68 AIML files, here are some example topics of conversations the 
 - Religion
 - Personality Types
 
+## Feel free to submit new AIML files in a PR!
 
 
 # 🌟Star if you like the bot, join our [support server](https://discord.gg/Z4ebH8PXeA) for any kind of support!
